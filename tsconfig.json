@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext", "ScriptHost"],
+    "lib": ["DOM", "DOM.Iterable", "ES2023", "ScriptHost"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "noEmit": true,
@@ -15,9 +15,13 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext",
-    "useDefineForClassFields": false
+    "target": "es2023",
+    "useDefineForClassFields": false,
+    "paths": {
+      "*": ["./*"],
+      "openclaw/plugin-sdk": ["./src/plugin-sdk/index.ts"]
+    }
   },
-  "include": ["src/**/*", "ui/**/*"],
-  "exclude": ["node_modules", "dist", "src/**/*.test.ts"]
+  "include": ["src/**/*", "ui/**/*", "extensions/**/*"],
+  "exclude": ["node_modules", "dist", "src/**/*.test.ts", "extensions/**/*.test.ts"]
 }
