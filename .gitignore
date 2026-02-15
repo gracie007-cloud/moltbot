@@ -69,10 +69,15 @@ apps/ios/*.mobileprovision
 
 # Local untracked files
 .local/
+<<<<<<< HEAD
 .vscode/
+=======
+docs/.local/
+>>>>>>> 45e12d23881aa579a85d06a7672c73458e313e9a
 IDENTITY.md
 USER.md
 .tgz
+.idea
 
 # local tooling
 .serena/
@@ -82,9 +87,13 @@ USER.md
 .agent/*.json
 !.agent/workflows/
 local/
+<<<<<<< HEAD
 
 # Generated logs
 doctor.log
 
 # Python cache
 **/__pycache__/
+=======
+package-lock.json
+>>>>>>> 45e12d23881aa579a85d06a7672c73458e313e9a
